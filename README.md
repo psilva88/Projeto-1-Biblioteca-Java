@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/b8fd0de6-b567-4ef5-995d-cef5bb5d6504)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b8fd0de6-b567-4ef5-995d-cef5bb5d6504" alt="Unifacisa Aulas" width="300" />
+</p>
 
 
 # 📢Projeto 1 Ouvidoria Em Java
