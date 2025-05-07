@@ -1,12 +1,11 @@
-// •🔍Listagem de todas as manifestações registradas;
+// •🔍Listagem de todos os livros registrados;
 
-// •➕Criar uma nova manifestação e armazená-la no sistema;
+// •➕Adicionar uma novo livro e armazená-lo no sistema;
 
-// •📊Exibir a quantidade total de manifestações registradas;
+// •📊Exibir a quantidade total de livros registradas;
 
-// •🔎Pesquisar uma manifestação específica através do código único;
+// •🔎Pesquisar uma livro específico através de um código único;
 
-// •🗑️Excluir uma manifestação pelo código de identificação;
+// •🗑️Excluir uma livro pelo código de identificação;
 
-// •🚪Sair do sistema de ouvidoria de forma segura.
-
+// •🚪Sair do sistema de gerenciamento de biblioteca de forma segura.
