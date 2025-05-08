@@ -172,3 +172,5 @@ System.out.println("Digite seu nome: ");
 }
 }
 
+import java.util.Scanner;
+import javax.swing.JOptionPane;
