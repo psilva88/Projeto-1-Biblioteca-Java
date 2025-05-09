@@ -4,9 +4,9 @@
 
 // •📊Exibir a quantidade total de livros registradas;
 
-// •🔎Pesquisar uma livro específico através do título;
+// •🔎Pesquisar um livro específico através do título;
 
-// •🗑️Excluir uma livro pelo código de identificação;
+// •🗑️Excluir um livro pelo título;
 
 // •🚪Sair do sistema de gerenciamento de biblioteca de forma segura.
 
