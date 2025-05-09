@@ -14,7 +14,7 @@ Bem-vindo ao Sistema de Gerenciamento de Biblioteca! Este sistema foi desenvolvi
 
 •📊Exibir a quantidade total de livros registradas;
 
-•🔎Pesquisar uma livro específico através de um código único;
+•🔎Pesquisar uma livro específico através do título;
 
 •🗑️Excluir uma livro pelo código de identificação;
 
