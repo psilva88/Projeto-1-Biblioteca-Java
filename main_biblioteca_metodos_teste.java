@@ -80,12 +80,12 @@ do {
             }
         }
     }
-	
+    
     //2Adicionar um novo livro
     public static void adicionarLivro(Scanner scan, ArrayList<String> livros) {
         System.out.print("Digite o nome do livro: ");
-        String livro = scan.nextLine().toLowerCase();
-
+        String livro = scan.nextLine();
+        livro = livro.toLowerCase();
         if (livro.isEmpty()) {
             System.out.println("Erro, Nenhum livro adicionado.");
         } else {
@@ -93,30 +93,30 @@ do {
             System.out.println("Livro adicionado com sucesso!");
         }
     }
-	
+
     //3Exibir a quantidade total de livros
     public static void exibirQuantidade(ArrayList<String> livros) {
         System.out.println("Quantidade total de livros: " + livros.size());
     }
-	
+
     //4Pesquisar um livro através do título
     public static void pesquisarLivro(Scanner scan, ArrayList<String> livros) {
         System.out.print("Digite o título do livro que deseja pesquisar: ");
-        String titulo = scan.nextLine().toLowerCase();
-
-        if (titulo.isEmpty() || !livros.contains(titulo)) {
+        String tituloDoLivro = scan.nextLine();
+        tituloDoLivro = tituloDoLivro.toLowerCase();
+        if (tituloDoLivro.isEmpty() || !livros.contains(tituloDoLivro)) {
             System.out.println("Erro, Nenhum livro encontrado.");
-        } else {
-            System.out.println("Título do livro encontrado com sucesso!: " + titulo);
+        } else if (livros.contains(tituloDoLivro)) {
+            System.out.println("Título do livro encontrado com sucesso!: " + tituloDoLivro);
         }
     }
-	
+
     //5Excluir um livro pelo título
     public static void excluirLivro(Scanner scan, ArrayList<String> livros) {
         System.out.println("Digite o título do livro que deseja excluir: ");
-
-scan.close();
-}
+        
+        
+    }  
 }
         
 
