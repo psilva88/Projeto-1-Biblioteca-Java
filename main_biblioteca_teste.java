@@ -83,7 +83,13 @@ do {
                     //Excluir um livro pelo título
                     scan.nextLine(); 
                     System.out.println("Digite o título do livro que deseja excluir: ");
-                    
+                    String livroExcluido = scan.nextLine();
+                    livroExcluido = livroExcluido.toLowerCase();
+                    if (livroExcluido.isEmpty() || !livros.contains(livroExcluido)) {
+                        System.out.println("Erro, Nenhum livro encontrado.");
+                    } else if  (livros.remove(livroExcluido)) {
+                        System.out.println("O livro: " + livroExcluido + " foi excluido com sucesso!");
+                    }
                     break;
 
                 case 6:
