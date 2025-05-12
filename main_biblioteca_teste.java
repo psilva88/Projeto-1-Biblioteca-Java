@@ -1,6 +1,4 @@
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 public class Projeto1Biblioteca {
 	public static void main(String[] args) {
 	
