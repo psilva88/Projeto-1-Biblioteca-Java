@@ -80,6 +80,7 @@ do {
             }
         }
     }
+	
     //2Adicionar um novo livro
     public static void adicionarLivro(Scanner scan, ArrayList<String> livros) {
         System.out.print("Digite o nome do livro: ");
@@ -92,10 +93,12 @@ do {
             System.out.println("Livro adicionado com sucesso!");
         }
     }
+	
     //3Exibir a quantidade total de livros
     public static void exibirQuantidade(ArrayList<String> livros) {
         System.out.println("Quantidade total de livros: " + livros.size());
     }
+	
     //4Pesquisar um livro através do título
     public static void pesquisarLivro(Scanner scan, ArrayList<String> livros) {
         System.out.print("Digite o título do livro que deseja pesquisar: ");
@@ -107,6 +110,7 @@ do {
             System.out.println("Título do livro encontrado com sucesso!: " + titulo);
         }
     }
+	
     //5Excluir um livro pelo título
     public static void excluirLivro(Scanner scan, ArrayList<String> livros) {
         System.out.println("Digite o título do livro que deseja excluir: ");
