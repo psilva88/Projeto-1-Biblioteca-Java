@@ -5,7 +5,7 @@ public class Projeto1Biblioteca {
 
 // •🔍Listagem de todos os livros registrados;
 
-// •➕Adicionar uma novo livro e armazená-lo no sistema;
+// •➕Adicionar um novo livro e armazená-lo no sistema;
 
 // •📊Exibir a quantidade total de livros registradas;
 
