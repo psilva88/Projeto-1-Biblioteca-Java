@@ -10,7 +10,7 @@ Bem-vindo ao Sistema de Gerenciamento de Biblioteca! Este sistema foi desenvolvi
 
 •🔍Listagem de todos os livros registrados;
 
-•➕Adicionar uma novo livro e armazená-lo no sistema;
+•➕Adicionar um novo livro e armazená-lo no sistema;
 
 •📊Exibir a quantidade total de livros registradas;
 
