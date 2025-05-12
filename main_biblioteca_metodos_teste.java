@@ -20,6 +20,7 @@ public class Projeto1BibliotecaMetodos {
 int opcao;
 Scanner scan = new Scanner(System.in);
 ArrayList<String> livros = new ArrayList<String>();
+ArrayList<String> autores = new ArrayList<String>();
 
 do {
             System.out.println("\nSelecione uma das opções abaixo:");
@@ -36,11 +37,11 @@ do {
             switch (opcao) {
                 case 1:
                     //1Listagem de Livros
-                    listarLivros(livros);
+                    listarLivros(livros, autores);
                     break;
                 case 2:
                     //2Adicionar um novo livro
-                    adicionarLivro(scan, livros);
+                    adicionarLivro(scan, livros, autores);
                     break;
                 case 3:
                     //3Exibir a quantidade total de livros
@@ -70,27 +71,30 @@ do {
     // • Métodos para cada opção do sistema
     
     //1Listagem de Livros
-    public static void listarLivros(ArrayList<String> livros) {
+    public static void listarLivros(ArrayList<String> livros, ArrayList<String> autores) {
         System.out.println("Listagem de Livros:");
         if (livros.isEmpty()) {
             System.out.println("Nenhum livro cadastrado.");
         } else {
             for (int i = 0; i < livros.size(); i++) {
-                System.out.println((i + 1) + " - " + livros.get(i));
+                System.out.println("Título: " + livros.get(i) + " / Autor: " + autores.get(i));
             }
         }
     }
     
     //2Adicionar um novo livro
-    public static void adicionarLivro(Scanner scan, ArrayList<String> livros) {
+    public static void adicionarLivro(Scanner scan, ArrayList<String> livros, ArrayList<String> autores) {
         System.out.print("Digite o nome do livro: ");
         String livro = scan.nextLine();
         livro = livro.toLowerCase();
-        if (livro.isEmpty()) {
-            System.out.println("Erro, Nenhum livro adicionado.");
+        System.out.print("Digite o nome do autor: ");
+        String autor = scan.nextLine();
+        autor = autor.toLowerCase();
+        if (livro.isEmpty() || autor.isEmpty()) {
+            System.out.println("Erro, Nenhum livro ou autor adicionado.");
         } else {
-            livros.add(livro);
-            System.out.println("Livro adicionado com sucesso!");
+            livros.add(livro); autores.add(autor);
+            System.out.println("Livro e autor adicionado com sucesso!");
         }
     }
 
@@ -118,7 +122,7 @@ do {
         livroExcluido = livroExcluido.toLowerCase();
         if (livroExcluido.isEmpty() || !livros.contains(livroExcluido)) {
             System.out.println("Erro, Nenhum livro encontrado.");
-        } else if  (livros.remove(livroExcluido)) {
+        } else if (livros.remove(livroExcluido)) {
             System.out.println("O livro: " + livroExcluido + " foi excluido com sucesso!");
         }
     }  
