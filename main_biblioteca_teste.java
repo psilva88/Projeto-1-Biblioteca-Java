@@ -70,12 +70,12 @@ do {
                     //Pesquisar um livro através do título
                     scan.nextLine(); 
                     System.out.print("Digite o título do livro que deseja pesquisar: ");
-                    String titulodolivro = scan.nextLine();
-                    titulodolivro = titulodolivro.toLowerCase();
-                    if (titulodolivro.isEmpty() || !livros.contains(titulodolivro) ) {
+                    String tituloDoLivro = scan.nextLine();
+                    tituloDoLivro = tituloDoLivro.toLowerCase();
+                    if (tituloDoLivro.isEmpty() || !livros.contains(tituloDoLivro) ) {
                         System.out.println("Erro, Nenhum livro encontrado.");
-                    } else if (livros.contains(titulodolivro)) {
-                        System.out.println("Título do livro encontrado com sucesso!: " + titulodolivro);
+                    } else if (livros.contains(tituloDoLivro)) {
+                        System.out.println("Título do livro encontrado com sucesso!: " + tituloDoLivro);
                     }
                     break;
 
@@ -83,6 +83,7 @@ do {
                     //Excluir um livro pelo título
                     scan.nextLine(); 
                     System.out.println("Digite o título do livro que deseja excluir: ");
+                    
                     break;
 
                 case 6:
