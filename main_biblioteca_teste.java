@@ -20,6 +20,7 @@ public class Projeto1Biblioteca {
 int opcao;
 Scanner scan = new Scanner(System.in);
 ArrayList<String> livros = new ArrayList<String>();
+ArrayList<String> autores = new ArrayList<String>();
 
 do {
             System.out.println("\nSelecione uma das opções abaixo:");
@@ -41,7 +42,7 @@ do {
                         System.out.println("Nenhum livro cadastrado.");
                     } else {
                         for (int i = 0; i < livros.size(); i++) {
-                            System.out.println((i + 1) + " - " + livros.get(i));
+                            System.out.println("Título: " + livros.get(i) + " / Autor: " + autores.get(i));
                         }
                     }
                     break;
@@ -52,11 +53,14 @@ do {
                     System.out.print("Digite o nome do livro: ");
                     String livro = scan.nextLine();
                     livro = livro.toLowerCase();
-                    if (livro.isEmpty()) {
-                        System.out.println("Erro, Nenhum livro adicionado.");
+                    System.out.print("Digite o nome do autor: ");
+                    String autor = scan.nextLine();
+                    autor = autor.toLowerCase();
+                    if (livro.isEmpty() || autor.isEmpty()) {
+                        System.out.println("Erro, Nenhum livro ou autor adicionado.");
                     } else {
-                        livros.add(livro);
-                        System.out.println("Livro adicionado com sucesso!");
+                        livros.add(livro); autores.add(autor);
+                        System.out.println("Livro e autor adicionado com sucesso!");
                     }
                     break;
 
@@ -87,7 +91,7 @@ do {
                     livroExcluido = livroExcluido.toLowerCase();
                     if (livroExcluido.isEmpty() || !livros.contains(livroExcluido)) {
                         System.out.println("Erro, Nenhum livro encontrado.");
-                    } else if  (livros.remove(livroExcluido)) {
+                    } else if (livros.remove(livroExcluido)) {
                         System.out.println("O livro: " + livroExcluido + " foi excluido com sucesso!");
                     }
                     break;
