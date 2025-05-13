@@ -90,7 +90,7 @@ do {
         System.out.print("Digite o nome do autor: ");
         String autor = scan.nextLine();
         autor = autor.toLowerCase();
-        if (livro.isEmpty() || autor.isEmpty()) {
+        if (livro.trim().isEmpty() || autor.trim().isEmpty()) {
             System.out.println("Erro, Nenhum livro ou autor adicionado.");
         } else {
             livros.add(livro); autores.add(autor);
